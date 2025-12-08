@@ -1,0 +1,16 @@
+.boot-screen{position:fixed;inset:0;z-index:99999;
+             background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,#4c1d95 100%);
+             display:flex;flex-direction:column;align-items:center;justify-content:center;
+             animation:fadeOut .5s ease 3.5s forwards}
+@keyframes fadeOut{to{opacity:0;pointer-events:none}}
+.boot-logo{font-size:80px;margin-bottom:30px;animation:logoGlow 2s infinite}
+@keyframes logoGlow{0%,100%{filter:drop-shadow(0 0 20px #a855f7);transform:scale(1)}
+                   50%{filter:drop-shadow(0 0 40px #ec4899);transform:scale(1.05)}}
+.boot-title{font-size:48px;font-weight:700;
+            background:linear-gradient(135deg,#a855f7,#ec4899);
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.boot-loader{width:300px;height:6px;background:rgba(139,92,246,.2);
+            border-radius:3px;overflow:hidden;margin-top:40px}
+.boot-loader-fill{height:100%;background:linear-gradient(90deg,#a855f7,#ec4899);
+                  animation:loadProgress 3s ease forwards}
+@keyframes loadProgress{0%{width:0}100%{width:100%}}
