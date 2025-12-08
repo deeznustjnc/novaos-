@@ -4,24 +4,24 @@
   <meta charset="utf-8">
   <title>Nova OS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- styles -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/boot.css">
   <link rel="stylesheet" href="css/window.css">
   <link rel="stylesheet" href="css/browser.css">
   <link rel="stylesheet" href="css/widgets.css">
+
+  <!-- icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- ES-module shims for older browsers (optional) -->
-  <script async src="https://unpkg.com/es-module-shims@1"></script>
 </head>
 <body>
   <div id="root"></div>
 
+  <!-- application entry -->
   <script type="module">
-    /* ----------  entry point  ---------- */
     import { NovaOS } from './js/app.jsx.js';
-    import { render } from 'https://esm.sh/react-dom@18.2.0';
-
-    render(NovaOS(), document.getElementById('root'));
+    ReactDOM.render(React.createElement(NovaOS), document.getElementById('root'));
   </script>
 </body>
 </html>
