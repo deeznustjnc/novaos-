@@ -6,9 +6,16 @@
 .boot-logo{font-size:80px;margin-bottom:30px;animation:logoGlow 2s infinite}
 @keyframes logoGlow{0%,100%{filter:drop-shadow(0 0 20px #a855f7);transform:scale(1)}
                    50%{filter:drop-shadow(0 0 40px #ec4899);transform:scale(1.05)}}
-.boot-title{font-size:48px;font-weight:700;
-            background:linear-gradient(135deg,#a855f7,#ec4899);
-            -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.boot-title{
+    font-size:48px;
+    font-weight:700;
+    background:linear-gradient(135deg,#a855f7,#ec4899);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:20px;
+    animation:slideUp 1s ease .2s backwards;
+}
 .boot-loader{width:300px;height:6px;background:rgba(139,92,246,.2);
             border-radius:3px;overflow:hidden;margin-top:40px}
 .boot-loader-fill{height:100%;background:linear-gradient(90deg,#a855f7,#ec4899);

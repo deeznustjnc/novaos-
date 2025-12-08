@@ -9,10 +9,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
          display:flex;flex-direction:column}
 .animated-background{position:absolute;inset:0;overflow:hidden}
 
+/* top-bar logo */
+.nova-logo{
+    font-weight:700;
+    background:linear-gradient(135deg,#a855f7,#ec4899);
+    -webkit-background-clip:text;
+    background-clip:text;              /* standard property added */
+    -webkit-text-fill-color:transparent;
+    font-size:14px;
+}
+
 /* particles / shapes  (shortened – same as original) */
 .floating-shape{position:absolute;border-radius:50%;filter:blur(60px);opacity:.4;
                 animation:float 20s infinite ease-in-out}
-/* … keep keyframes & shape-N classes … */
 
 /* dock */
 .dock{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);
