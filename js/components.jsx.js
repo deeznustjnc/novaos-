@@ -1,3 +1,4 @@
+import React from 'https://esm.sh/react@18.2.0';
 import { Icon } from './icons.js';
 
 export function Modal({ children, onClose }) {
